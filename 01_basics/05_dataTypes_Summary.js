@@ -47,3 +47,24 @@ console.log(typeof myFunction)
 // Function  =>  function
 // Object  =>  object
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+//two types of memory
+//Stack(Primitive) an Heap(Reference)
+//jab bhi stac kmemory use hoti hai, jo bhi variable use kiya uska ek copy milta hai.
+//jab memory heap me define hoti hai, vha se milta hai reference original value ka
+
+let myYouTubeName = "Ishu Pal"
+let anotherName = myYouTubeName
+console.log("anotherName: ", anotherName, "myYouTubeName: ", myYouTubeName)
+anotherName = "Chai and Coffee"
+console.log("anotherName: ",anotherName, "myYouTubeName: ", myYouTubeName)
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "use@ycl" 
+}
+
+let userTwo = userOne
+console.log("userOne", userOne, "userTwo", userTwo)
+userTwo.email = "kind@gmail.com"
+console.log("userOne", userOne, "userTwo", userTwo)
